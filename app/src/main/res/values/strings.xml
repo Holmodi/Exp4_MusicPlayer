@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Simple Player</string>
+    <string name="info_label">To start click to image and choose track</string>
+</resources>

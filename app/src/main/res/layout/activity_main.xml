@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="64dp"
+    tools:context=".activity.MainActivity">
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+    <TextView
+        android:id="@+id/info_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/info_label" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_below="@+id/info_label"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_audiotrack_black_24dp" />
+
+    <TextView
+        android:id="@+id/artist_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icon"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:id="@+id/track_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/artist_name_tv"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/track_name_tv"
+        android:layout_centerHorizontal="true">
+
+        <ImageButton
+            android:id="@+id/play_pause_button"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@null"
+            android:src="@drawable/ic_play_arrow_black_24dp"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/stop_button"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@null"
+            android:src="@drawable/ic_stop_black_24dp"
+            android:text="stop"
+            android:visibility="invisible" />
+    </LinearLayout>
+</RelativeLayout>
